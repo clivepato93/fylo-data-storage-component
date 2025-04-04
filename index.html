@@ -30,26 +30,44 @@
 		<section
 			class="-z-10 background-container absolute w-full h-full bg-[url(/images/bg-mobile.png)] bg-cover desktop:bg-[url(/images/bg-desktop.png)] desktop:h-[50vh] desktop:bottom-0"
 		></section>
-		<main class="h-[100vh] flex flex-col desktop:flex-row justify-center items-center p-4 gap-4">
-      <section>
-        <section class="logo bg-Dark-Blue rounded-tr-full  flex flex-col gap-4 justify-center h-[20vh] rounded-tl-sm desktop:min-w-[30vw]">
-          <img src="/images/logo.svg" alt="" class="w-[45%] ml-8">
-          <section class="icons flex gap-1 mobile:gap-4  mobile:ml-8">
-          <div class="bg-Very-Dark-Blue p-4 rounded-2xl"> <img src="/images/icon-document.svg" alt=""></div> <div class="bg-Very-Dark-Blue p-4 rounded-2xl"><img src="/images/icon-folder.svg" alt=""></div><div class="bg-Very-Dark-Blue p-4 rounded-2xl"><img src="/images/icon-upload.svg" alt=""></div>
-          </section>
-        </section>
-      </section>
-      <section class="bg-Dark-Blue p-10 ">
-         <h1>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</h1>
-         <progress id="file" min="0" value="815" max="1000" class="w-full rounded-2xl"> 81.5% </progress>
+		<main class="h-[100vh] flex justify-center items-center p-4 gap-4">
+			<div
+				class="test flex flex-col desktop:flex-row justify-center items-end border-2 border-pink-200 gap-4"
+			>
 
-      </section>
-  </main>
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      >Frontend Mentor</a
-    >. Coded by <a href="#">Your Name Here</a>.
-  </div>
+					<section
+						class="logo bg-Dark-Blue rounded-tr-full flex flex-col gap-4 justify-center p-10 pr-25 rounded-tl-sm shrink-0 w-full desktop:w-auto"
+					>
+						<img src="/images/logo.svg" alt="" class="w-[45%] mobile:ml-8 shrink-0" />
+						<section class="icons flex gap-1 mobile:gap-4 mobile:ml-8">
+								<img src="/images/icon-document.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]" />
+
+								<img src="/images/icon-folder.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"/>
+
+								<img src="/images/icon-upload.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"/>
+
+						</section>
+					</section>
+				<section class="bg-Dark-Blue p-10 shrink-1 rounded-xl">
+					<h1>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</h1>
+					<progress
+						id="file"
+						min="0"
+						value="815"
+						max="1000"
+						class="w-full rounded-2xl"
+					>
+						81.5%
+					</progress>
+					<div class="numbers flex justify-between"><h2>0</h2> <h2>1000</h2></div>
+				</section>
+			</div>
+		</main>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
 	</body>
 </html>
