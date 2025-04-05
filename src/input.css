@@ -16,19 +16,25 @@
 	--color-Grayish-Blue: hsl(229, 7%, 55%);
 	--color-Dark-Blue: hsl(228, 56%, 26%);
 	--color-Very-Dark-Blue: hsl(229, 57%, 11%);
-	--color--Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+	--color--Gradient: linear-gradient(90deg,hsl(6, 100%, 80%)0%,hsl(335, 100%, 65%) 100% );
+	--color-test1:hsl(6, 100%, 80%);
+	--color-test2:hsl(335, 100%, 65%);
 	--breakpoint-mobile: 375px;
 	--breakpoint-desktop: 700px;
 	--font-raleway: "Raleway", sans-serif;
 }
 
-::-webkit-progress-value {
-    border-radius: 1rem;
-	background: linear-gradient(90deg,hsl(6, 100%, 80%)0%,hsl(335, 100%, 65%) 100% )
-}
 
-
-::-webkit-progress-bar {
-    border-radius: 1rem;
-	background-color: var(--color-Very-Dark-Blue);
-}
+@media ( width >= 700px){
+	.data-used::after{
+		position: absolute;
+		right: 0px;
+		bottom: 60px;
+		z-index: 10;
+		content: '';
+		width: 100px;
+		height: 100px;
+		border-top: 100px solid white;
+		border-left: 100px solid transparent;
+	}
+}  

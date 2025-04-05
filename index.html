@@ -32,34 +32,61 @@
 		></section>
 		<main class="h-[100vh] flex justify-center items-center p-4 gap-4">
 			<div
-				class="test flex flex-col desktop:flex-row justify-center items-end border-2 border-pink-200 gap-4"
+				class="test flex flex-col desktop:flex-row justify-center items-end gap-4"
 			>
+				<section
+					class="logo bg-Dark-Blue rounded-tr-[150px] flex flex-col gap-4 justify-center p-10 pr-32 rounded-tl-sm shrink-0 w-full desktop:w-auto"
+				>
+					<img
+						src="/images/logo.svg"
+						alt=""
+						class="w-[85%] desktop:w-[60%] mobile:ml-8 shrink-0"
+					/>
+					<section class="icons flex gap-6 mobile:gap-4 mobile:ml-8 w-full">
+						<img
+							src="/images/icon-document.svg"
+							alt=""
+							class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"
+						/>
 
-					<section
-						class="logo bg-Dark-Blue rounded-tr-full flex flex-col gap-4 justify-center p-10 pr-25 rounded-tl-sm shrink-0 w-full desktop:w-auto"
-					>
-						<img src="/images/logo.svg" alt="" class="w-[45%] mobile:ml-8 shrink-0" />
-						<section class="icons flex gap-1 mobile:gap-4 mobile:ml-8">
-								<img src="/images/icon-document.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]" />
+						<img
+							src="/images/icon-folder.svg"
+							alt=""
+							class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"
+						/>
 
-								<img src="/images/icon-folder.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"/>
-
-								<img src="/images/icon-upload.svg" alt="" class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"/>
-
-						</section>
+						<img
+							src="/images/icon-upload.svg"
+							alt=""
+							class="bg-Very-Dark-Blue p-4 rounded-2xl w-[56px]"
+						/>
 					</section>
-				<section class="bg-Dark-Blue p-10 shrink-1 rounded-xl">
-					<h1>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</h1>
-					<progress
+				</section>
+				<section class="bg-Dark-Blue p-10 shrink-1 rounded-xl w-full desktop:w-[40vw] flex flex-col gap-1">
+
+					<h1>You’ve used <span class="font-semibold">815 GB</span> of your storage </h1>
+					<div class="data-allowance bg-Very-Dark-Blue w-full h-[20px] rounded-xl  relative">
+						<div class="data-left  hidden desktop:block absolute right-[25%] desktop:right-0 border-black border-0 bg-white p-8 rounded-2xl   desktop:bottom-[80px] z-20"><h2 class="text-xl">185 <span class="text-Grayish-Blue ">GB Left</span></h2></div>
+						<div class="data-used w-[81.5%]  h-[20px] bg-linear-to-r from-test1 to to-test2 rounded-xl"></div>
+						<div
+							class="ball absolute border-2 rounded-full border-black bg-white top-0 z-10 w-4 h-4 right-[19%]  bottom-8 top-0.5"
+						></div>
+					</div>
+					<!-- <progress
 						id="file"
 						min="0"
 						value="815"
 						max="1000"
-						class="w-full rounded-2xl"
+						class="w-full rounded-2xl relative"
 					>
 						81.5%
-					</progress>
-					<div class="numbers flex justify-between"><h2>0</h2> <h2>1000</h2></div>
+					</progress> -->
+					<div class="numbers flex justify-between relative">
+						<h2>0</h2>
+						<h2>1000</h2>
+						<div class="data-left-mobile  desktop:hidden absolute right-[25%] desktop:right-0 border-black border-0 bg-white p-8 rounded-2xl top-10  desktop:bottom-12 z-20"><h2 class="text-xl">185 <span class="text-Grayish-Blue ">GB Left</span></h2></div>
+
+					</div>
 				</section>
 			</div>
 		</main>
